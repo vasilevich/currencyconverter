@@ -20,6 +20,7 @@ class CurrencySourceBankOfIsrael extends CurrencySource
                 $this->currencyList->add($element->CURRENCYCODE->__toString(), (float)$element->RATE->__toString());
             }
         }
+        $this->updateTimeStamp();
     }
 
 }

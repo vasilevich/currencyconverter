@@ -18,6 +18,7 @@ class CurrencySourceBankOfEurope extends CurrencySource
         foreach ($xml->Cube->Cube->Cube as $element) {
             $this->currencyList->add($element->attributes()->currency->__toString(), 1 / (float)$element->attributes()->rate->__toString());
         }
+        $this->updateTimeStamp();
     }
 
 }
