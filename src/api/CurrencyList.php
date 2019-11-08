@@ -1,5 +1,6 @@
 <?php
 
+namespace CurrencyConverter;
 require_once __DIR__ . "./Currency.php";
 
 class CurrencyList
@@ -17,7 +18,7 @@ class CurrencyList
     {
         $this->source = $source;
         $this->base = trim(strtoupper(($base)));
-        // $this->add($base, 1);
+        //  $this->add($base, 1);
     }
 
     public function add($to, $rate)
@@ -39,16 +40,25 @@ class CurrencyList
         $to = trim(strtoupper($to));
         if ($from == $to)
             return $amount;
+        else if ($from == $this->base) {
+            return $this->getCurrency($to)->reverseConvert($amount);
+        } else if ($to == $this->base) {
+            return $this->getCurrency($from)->convert($amount);
+        } else {
+            return $this->convert($this->base, $to, $this->convert($from, $this->base, $amount));
+        }
+        return null;
+    }
+
+    /**
+     * @param $code
+     * @return Currency
+     */
+    public function getCurrency($code)
+    {
         foreach ($this->currencies as $currency) {
-            if ($this->base == $from && $currency->isTo($to)) {
-                return $currency->reverseConvert($amount);
-            } else if ($this->base == $to && $currency->isTo($from)) {
-                return $currency->convert($amount);
-            } else if ($this->base != $to && $currency->isTo($from)) {
-                return $this->convert($this->base, $to, $this->convert($from, $this->base, $amount));
-            }
-
-
+            if ($currency->isTo($code))
+                return $currency;
         }
         return null;
     }

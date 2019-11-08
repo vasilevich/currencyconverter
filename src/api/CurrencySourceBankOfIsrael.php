@@ -1,4 +1,6 @@
 <?php
+
+namespace CurrencyConverter;
 require_once __DIR__ . "./CurrencySource.php";
 
 class CurrencySourceBankOfIsrael extends CurrencySource

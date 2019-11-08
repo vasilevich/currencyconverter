@@ -11,4 +11,9 @@
             "role": "Developer"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "CurrencyConverter\\": "src"
+        }
+    }
 }

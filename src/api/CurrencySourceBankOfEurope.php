@@ -1,4 +1,6 @@
 <?php
+
+namespace CurrencyConverter;
 require_once __DIR__ . "./CurrencySource.php";
 
 class CurrencySourceBankOfEurope extends CurrencySource
@@ -14,7 +16,7 @@ class CurrencySourceBankOfEurope extends CurrencySource
         $url = $this->currencyList->getSource();
         $xml = simplexml_load_file($url);
         foreach ($xml->Cube->Cube->Cube as $element) {
-            $this->currencyList->add($element->attributes()->currency->__toString(), (float)$element->attributes()->rate->__toString());
+            $this->currencyList->add($element->attributes()->currency->__toString(), 1 / (float)$element->attributes()->rate->__toString());
         }
     }
 

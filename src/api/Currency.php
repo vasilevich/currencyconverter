@@ -1,6 +1,6 @@
 <?php
 
-
+namespace CurrencyConverter;
 class Currency
 {
 
@@ -27,4 +27,5 @@ class Currency
     {
         return $this->to == $to;
     }
+
 }
