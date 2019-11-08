@@ -1,19 +1,27 @@
 {
-    "name": "vasilevich/currencyconverter",
-    "type": "library",
-    "description": "A simple currency converter purely converting currency without any additional overhead.  is able to use Bank Of Israel, and Bank Of Europe as a base",
-    "keywords": ["relevant","tags","go","here"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Yosef Langer",
-            "email": "yosef_cool_ha@hotmail.com",
-            "role": "Developer"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "CurrencyConverter\\": "src"
-        }
+  "name": "vasilevich/currencyconverter",
+  "type": "library",
+  "description": "A simple currency converter purely converting currency without any additional overhead.  is able to use Bank Of Israel, and Bank Of Europe as a base",
+  "keywords": [
+    "currency",
+    "converter",
+    "europe",
+    "israel",
+    "usd",
+    "euro",
+    "ils"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yosef Langer",
+      "email": "yosef_cool_ha@hotmail.com",
+      "role": "Developer"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CurrencyConverter\\": "src"
+    }
+  }
 }
