@@ -1,6 +1,6 @@
 <?php
 
-namespace CurrencyConverter;
+namespace vasilevich\currencyconverter;
 require_once __DIR__ . "./CurrencyList.php";
 
 class CurrencySource

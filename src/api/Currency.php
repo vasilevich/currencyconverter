@@ -1,6 +1,6 @@
 <?php
 
-namespace CurrencyConverter;
+namespace vasilevich\currencyconverter;
 class Currency
 {
 

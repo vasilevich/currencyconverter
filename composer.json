@@ -20,8 +20,6 @@
     }
   ],
   "autoload": {
-    "psr-4": {
-      "CurrencyConverter\\": "src"
-    }
+    "psr-4": { "vasilevich\\currencyconverter\\": "src/" }
   }
 }
