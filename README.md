@@ -19,8 +19,9 @@ Usage Example
 ```php
 <?php
 require_once __DIR__ . "./vendor/autoload.php";
-use CurrencyConverter\CurrencySourceBankOfEurope;
-use CurrencyConverter\CurrencySourceBankOfIsrael;
+use vasilevich\currencyconverter\CurrencySourceBankOfEurope;
+use vasilevich\currencyconverter\CurrencySourceBankOfIsrael;
+
 
 $converter = new CurrencySourceBankOfEurope(); // use european bank
 var_dump($converter->getCurrencyList()->convert("EUR", "USD", 1)); // -> 1 euro to usd through Europe bank
