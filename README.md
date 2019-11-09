@@ -47,5 +47,5 @@ var_dump($converter->getCurrencyList()->convert("EUR", "ILS", 1)); // -> 1 euro 
 
 $serializedConverter = $converter->serialize(); // convert the object to string, ready for caching/saving/transferring by your own logic
 $unserializedConverter = new CurrencySourceFromSerialization($serializedConverter); //obtain the serialized converter from anywhere and deserialize the converter back into use
-var_dump($unserializedConverter->getCurrencyList()->convert("ILS", "USD", "4"));  //test converter
+var_dump($unserializedConverter->getCurrencyList()->convert("ILS", "USD", 4));  //test converter
 ```
