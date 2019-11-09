@@ -1,7 +1,7 @@
 <?php
 
 namespace vasilevich\currencyconverter;
-require_once __DIR__ . "./CurrencySource.php";
+require_once __DIR__ . "/CurrencySource.php";
 
 class CurrencySourceDenemarkNationalBank extends CurrencySource
 {

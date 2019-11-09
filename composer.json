@@ -1,7 +1,7 @@
 {
   "name": "vasilevich/currencyconverter",
   "type": "library",
-  "description": "A simple currency converter purely converting currency without any additional overhead.  is able to use Bank Of Israel, and Bank Of Europe as a base",
+  "description": "A simple currency converter purely converting currency without any additional overhead.  is able to use Bank Of Israel, Bank Of Europe and Denmark as of now, as a base.",
   "keywords": [
     "currency",
     "converter",

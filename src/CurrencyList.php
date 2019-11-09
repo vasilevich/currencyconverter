@@ -1,7 +1,7 @@
 <?php
 
 namespace vasilevich\currencyconverter;
-require_once __DIR__ . "./Currency.php";
+require_once __DIR__ . "/Currency.php";
 
 class CurrencyList implements \Serializable
 {

@@ -4,7 +4,7 @@ namespace vasilevich\currencyconverter;
 
 use DateTime;
 
-require_once __DIR__ . "./CurrencyList.php";
+require_once __DIR__ . "/CurrencyList.php";
 
 class CurrencySource implements \Serializable
 {
