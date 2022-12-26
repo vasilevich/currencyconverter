@@ -1,6 +1,7 @@
 {
   "name": "vasilevich/currencyconverter",
   "type": "library",
+  "version": "1.0.7",
   "description": "A simple currency converter purely converting currency without any additional overhead.  is able to use Bank Of Israel, Bank Of Europe and Denmark as of now, as a base.",
   "keywords": [
     "currency",
